@@ -18,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           <Button variant="secondary">Secondary</Button>
           <Button variant="ghost">Ghost</Button>
           <Button variant="destructive">Destructive</Button>
+          <Button variant="outline">Outline</Button>
         </div>
       </section>
 

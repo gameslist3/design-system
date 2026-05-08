@@ -11,6 +11,7 @@ const buttonVariants = cva(
         secondary: 'bg-green-500 text-white hover:bg-green-600 shadow-sm hover:shadow-md',
         ghost: 'hover:bg-primary-50 text-primary-600',
         destructive: 'bg-red-500 text-white hover:bg-red-600 shadow-sm hover:shadow-md',
+        outline: 'border border-primary-300 text-primary-700 bg-white hover:bg-primary-50 shadow-sm hover:shadow-md',
       },
       size: {
         'button-sm': 'h-8 px-3 text-xs rounded-sm gap-1.5',
