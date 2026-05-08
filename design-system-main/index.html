@@ -13,9 +13,102 @@
 
     <title>Design System</title>
 
+    <style>
+      :root {
+        --button-primary-bg: #0ea5e9;
+        --button-primary-hover: #0284c7;
+        --button-secondary-bg: #22c55e;
+        --button-secondary-hover: #16a34a;
+        --button-ghost-text: #0369a1;
+        --button-ghost-hover: #e0f2fe;
+        --button-destructive-bg: #ef4444;
+        --button-destructive-hover: #dc2626;
+        --button-outline-border: #7dd3fc;
+        --button-outline-text: #075985;
+        --button-outline-hover: #f0f9ff;
+      }
 
+      .html-preview {
+        margin: 1.5rem;
+        font-family: Inter, system-ui, -apple-system, sans-serif;
+      }
+
+      .html-preview__title {
+        margin: 0 0 0.75rem;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      .html-preview__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+
+      .html-preview__button {
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.625rem 1rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+
+      .html-preview__button--primary {
+        background: var(--button-primary-bg);
+        color: #fff;
+      }
+      .html-preview__button--primary:hover {
+        background: var(--button-primary-hover);
+      }
+
+      .html-preview__button--secondary {
+        background: var(--button-secondary-bg);
+        color: #fff;
+      }
+      .html-preview__button--secondary:hover {
+        background: var(--button-secondary-hover);
+      }
+
+      .html-preview__button--ghost {
+        background: transparent;
+        color: var(--button-ghost-text);
+      }
+      .html-preview__button--ghost:hover {
+        background: var(--button-ghost-hover);
+      }
+
+      .html-preview__button--destructive {
+        background: var(--button-destructive-bg);
+        color: #fff;
+      }
+      .html-preview__button--destructive:hover {
+        background: var(--button-destructive-hover);
+      }
+
+      .html-preview__button--outline {
+        border: 1px solid var(--button-outline-border);
+        background: #fff;
+        color: var(--button-outline-text);
+      }
+      .html-preview__button--outline:hover {
+        background: var(--button-outline-hover);
+      }
+    </style>
   </head>
   <body>
+    <section class="html-preview" aria-label="HTML button variants preview">
+      <h2 class="html-preview__title">Button variants (HTML preview)</h2>
+      <div class="html-preview__buttons">
+        <button class="html-preview__button html-preview__button--primary" type="button">Primary</button>
+        <button class="html-preview__button html-preview__button--secondary" type="button">Secondary</button>
+        <button class="html-preview__button html-preview__button--ghost" type="button">Ghost</button>
+        <button class="html-preview__button html-preview__button--destructive" type="button">Destructive</button>
+        <button class="html-preview__button html-preview__button--outline" type="button">Outline</button>
+      </div>
+    </section>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
